@@ -1,0 +1,49 @@
+tr[class="read"]{
+  background-image:linear-gradient(#f1f1f1, #cccccc);
+}
+tr[class="to-read"]{
+  background-image:linear-gradient(#e1f5fe,#e1f5f5);
+}
+tr[class="in-progress"]{
+  background-image:linear-gradient(#ddd, #ccc);
+}
+span{
+  display:inline-block;
+}
+tr[class="to-read"]  span[class="status"]{
+border:2px solid #000;
+background-image: linear-gradient(#dfdfe2, white );
+}
+tr[class="read"] span[class="status"]{
+  background-image: linear-gradient(to bottom, #dfdfe2, white );
+  border:2px solid #000;
+}
+
+tr[class="in-progress"] span[class="status"]{
+  border:2px solid black;
+  background-image:linear-gradient(#e1f5fe,#b3e5fc);
+}
+span[class="status"],span[class^="rate"] {
+  height:10px;
+  width:100px;
+  padding:20px;
+  border-radius:50px
+} 
+ span[class^="rate"] > span{
+  padding:20px;
+  border:1px solid transparent;
+  border-radius:50%;
+  margin:5px;
+  height:5px;
+  width:5px;
+  background-color:#b3e5fc;
+}
+span[class~="one"] > span:first-child{
+  background-image: linear-gradient(#000000,#b3e5fc);
+}
+span[class~="two"] > span:nth-child(1), span[class~="two"] > span:nth-child(2){
+  background-image:linear-gradient(#e1f5fe,midnightblue);
+}
+span[class~="three"] > span {
+  background-image:linear-gradient(#e1f5fe,midnightblue);
+}

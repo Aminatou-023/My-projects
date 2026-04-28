@@ -1,0 +1,122 @@
+/* .checkbox { 
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;  position: relative;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  vertical-align: middle; 
+}
+
+.checkbox:hover {
+  border-color: #888;
+}
+
+.checkbox:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox:focus {
+  outline: 2px solid #90caf9;
+  outline-offset: 2px;
+}
+\  */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  text-align: center;
+  background-color: brown;
+}
+
+.card {
+  background-color: white;
+  max-width: 400px;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px gray;
+  transition: transform 0.3s, background-color 0.3s ease
+}
+
+.card:hover {
+  background-color: khaki;
+  transform: scale(1.1);
+}
+
+h1::before {
+  content: "🥳 ";
+}
+
+h1::after {
+  content: " 🥳";
+}
+
+.message {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.card-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-links a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: midnightblue;
+  transition: background-color 0.3s ease;
+}
+
+.card-links a:hover {
+  background-color: orangered;
+}
+
+.card-links a:active {
+  background-color: midnightblue;
+}
+
+.card-links a:focus {
+  outline: 2px solid yellow;
+}
+
+.card-links a:visited {
+  color: crimson;
+}
+
+section {
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  /* display:none; */
+}
+
+section:hover{
+  transform: skewX(10deg);
+}
+section:target{
+  display:block;
+}
+
